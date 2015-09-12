@@ -1,7 +1,7 @@
 {
-  "name": "dogewand",
+  "name": "groestlwand",
   "version": "0.0.0",
-  "description": "Oauth dogecoin tipbot",
+  "description": "Oauth groestlcoin tipbot",
   "main": "server.js",
   "scripts": {
     "test": "NODE_ENV=test tape test/*.js"
