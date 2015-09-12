@@ -23,7 +23,7 @@ module.exports = function (app, passport) {
   app.get('/api/v1/accounts', api.getAccount);
 
   app.get('/', function (req, res) {
-    return res.send('dogewand');
+    return res.send('groestlwand');
   });
 
 
