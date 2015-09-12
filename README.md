@@ -1,14 +1,14 @@
-dogewand
+groestlwand
 ========
 
 You need to have node and postgres
 
-    git clone https://github.com/jtremback/dogewand.git
-    cd dogewand
+    git clone https://github.com/Groestlcoin/groestlwand.git
+    cd groestlwand
     npm install
     npm install -g gulp
 
-Fill in `config/config.js` using `config/config.example.js` as a guide. You're going to have to create Facebook and Reddit apps, and put their credentials in here. We should probably implement local auth at some point for testing purposes. You also need to create the databases `dogewand` and `dogewand-test`.
+Fill in `config/config.js` using `config/config.example.js` as a guide. You're going to have to create Facebook and Reddit apps, and put their credentials in here. We should probably implement local auth at some point for testing purposes. You also need to create the databases `groestlwand` and `groestlwand-test`.
 
     gulp build
     gulp watch
