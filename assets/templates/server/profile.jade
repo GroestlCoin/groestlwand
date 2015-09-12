@@ -12,9 +12,9 @@ block content
       hr.hr-small
       .row.panel-body
         .col-md-6
-          p To give your friends some doge, drag this bookmarklet to your bookmarks bar:
+          p To give your friends some groestlcoin, drag this bookmarklet to your bookmarks bar:
           .text-center
-            a(alt="Dogewand V#{version}" href="javascript:#{bookmarklet}" class="bookmarklet" onclick="alert('Drag me to the bookmarks bar')" title="Drag me to the bookmarks bar") Dogewand V#{version}
+            a(alt="Groestlwand V#{version}" href="javascript:#{bookmarklet}" class="bookmarklet" onclick="alert('Drag me to the bookmarks bar')" title="Drag me to the bookmarks bar") Groestlwand V#{version}
 
         .col-md-6
           form(action="/withdraw", method="POST")
@@ -23,7 +23,7 @@ block content
             p
               |Withdraw&nbsp;
               input.form-control.inline-control(type="number" placeholder="so many" name="amount")
-              |&nbsp;dogecoins.
+              |&nbsp;groestlcoins.
 
             p
               |Send to:&nbsp;
@@ -34,7 +34,7 @@ block content
 
       hr.hr-small
       .panel-body
-        p Dogewand account # #{user.user_id} is currently linked to:
+        p Groestlwand account # #{user.user_id} is currently linked to:
         ul.linked-accounts
           for account in user.accounts
             li.account-tab
@@ -43,5 +43,5 @@ block content
 
       hr.hr-small
       .panel-body
-        p WARNING! Dogewand is still ALPHA software. Some stuff probably doesn't work right, and it is hosted on a development server. Please don't deposit large amounts of dogecoin yet.
+        p WARNING! Groestlwand is still ALPHA software. Some stuff probably doesn't work right, and it is hosted on a development server. Please don't deposit large amounts of groestlcoin yet.
 
