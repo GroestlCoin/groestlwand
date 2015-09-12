@@ -11860,7 +11860,7 @@ function http (method, url, data, callback) {
 
 function modalErrorHandler (err, response) {
   if (err === 401) {
-    app.currentModal = 'dogewand-login-modal';
+    app.currentModal = 'groestlwand-login-modal';
   }
   else {
     app.setCurrentModal('error-modal', response.data);
@@ -12188,7 +12188,7 @@ var app = new Vue({
                 return uniqid === self.page.uniqid;
               });
             });
-            if (creds_match) { // Account is signed in on dogewand and page
+            if (creds_match) { // Account is signed in on groestlwand and page
               // It's go time
               self.resize(false);
               // if (!self.user.username) return self.setCurrentModal('username-modal');
