@@ -25,12 +25,12 @@ check if username exists and get providers for username
 * straight up auth
 
 ## signed into site, not signed into extension
-* ask if they want to sign up for dogewand or link this social media account to an existing dogewand account
+* ask if they want to sign up for groestlwand or link this social media account to an existing groestlwand account
 * if sign up- auth normally
 * if link- type in username, get list of providers linked to username, offer them for mergeuser.
 
 ## extension and site users do not match
-* ask if they want to sign up for dogewand or link this social media account to an existing dogewand account
+* ask if they want to sign up for groestlwand or link this social media account to an existing groestlwand account
 * if sign up- auth normally
 * if link- type in username, get list of providers linked to username, offer them for mergeuser.
 
@@ -38,13 +38,13 @@ check if username exists and get providers for username
 - Not signed into site:
   Pop modal informing a motherfucker, exit
 
-- Not signed into Dogewand
+- Not signed into Groestlwand
   Sign in button with page provider
   OR
   Link to existing account button
 
 
-- Not signed into Dogewand
+- Not signed into Groestlwand
   Sign in button with page provider
   OR
   Link to existing account button
@@ -53,12 +53,12 @@ check if username exists and get providers for username
 
 
 
-- Signed into Dogewand with wrong acct
+- Signed into Groestlwand with wrong acct
   Link to existing account button
 
 
-I have a Dogewand account linked to Twitter and Reddit. I am not logged into it.
-I log into Facebook and open the extension. I get a modal asking me if I want to make a new Dogewand
+I have a Groestlwand account linked to Twitter and Reddit. I am not logged into it.
+I log into Facebook and open the extension. I get a modal asking me if I want to make a new Groestlwand
 account with my Facebook account or link it to another account.
 
 page.provider: Facebook
@@ -67,8 +67,8 @@ user.provider: null
 user.uniqid: null
 
 
-I have a Dogewand account linked to Twitter and Facebook. I am not logged into it.
-I log into Facebook and open the extension. I get a modal asking me if I want to log into Dogewand
+I have a Groestlwand account linked to Twitter and Facebook. I am not logged into it.
+I log into Facebook and open the extension. I get a modal asking me if I want to log into Groestlwand
 with my Facebook account.
 
 page.provider: Facebook
@@ -77,8 +77,8 @@ user.provider: null
 user.uniqid: null
 
 
-I do not have a Dogewand account. I am not logged into it (obviously).
-I log into Facebook and open the extension. I get a modal asking me if I want to make a new Dogewand
+I do not have a Groestlwand account. I am not logged into it (obviously).
+I log into Facebook and open the extension. I get a modal asking me if I want to make a new Groestlwand
 account with my Facebook account.
 
 page.provider: Facebook
@@ -87,9 +87,9 @@ user.provider: null
 user.uniqid: null
 
 
-I have a Dogewand account linked to Twitter and Reddit. It has a username. I am logged into it.
+I have a Groestlwand account linked to Twitter and Reddit. It has a username. I am logged into it.
 I log into Facebook and open the extension. I get a modal asking me if I want to link my Facebook
-account to Dogewand.
+account to Groestlwand.
 
 page.provider: Facebook
 page.uniqid: jehan.tremback
@@ -98,7 +98,7 @@ user.uniqid: jehan.tremback
 
 
 if (page is logged in)
-  if (dogewand is logged in)
+  if (groestlwand is logged in)
     if (page creds match user creds)
       go!
     else
@@ -487,7 +487,7 @@ signed in to that provider. They claim the tip using the new user resolve flow. 
 
 Option 1:
 
-Do you already have a dogewand account? Click here to merge accounts.
+Do you already have a groestlwand account? Click here to merge accounts.
 Need both users. NOTE: profile info is effectively same as user object.
 Use passport authorize, then use profile info to look up additional account.
 When you have the additional account, choose which direction to merge in.
@@ -683,7 +683,7 @@ alternate db:
     hash
 
 
-POST dogewand.com/api/tip?id=jureto&amount=30&provider=face
+POST groestlwand.com/api/tip?id=jureto&amount=30&provider=face
 
 generate tip
   receive identifier of tipee and amount
@@ -715,14 +715,14 @@ todo:
 
 
 Bookmarklet interface:
-  popup "click on someone's profile link to tip them with the dogewand"
+  popup "click on someone's profile link to tip them with the groestlwand"
   link for explanatory image
   close button
   on click on profile link:
     pop amount dialog
     enter amount
     click tip button:
-      "you have tipped x y dogecoins. if they do not claim their tip, you can cancel it in 1 week. paste this message into a comment to let them know about it"
+      "you have tipped x y groestlcoins. if they do not claim their tip, you can cancel it in 1 week. paste this message into a comment to let them know about it"
 
 
 
@@ -771,6 +771,6 @@ view balance
 
 possible states upon viewing tip page
   not signed in
-    "x has tipped u y doges, click here to sign in"
+    "x has tipped u y groestls, click here to sign in"
   signed in
-    "x has tipped u y doges"
+    "x has tipped u y groestls"
