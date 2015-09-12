@@ -6,7 +6,7 @@ var db = require('../models/db');
 
 exports.tip = function (req, res, next) {
   var tip_path = req.params.tip;
-  var path_matched = tip_path.match(/(.*)doge\-(.*)/);
+  var path_matched = tip_path.match(/(.*)groestl\-(.*)/);
 
   if (!path_matched) return next('Invalid tip ID.');
 
